@@ -35,7 +35,8 @@ body {
 
 .container h1 {
   position: absolute;
-  color: #1c2a3f;
+  text-align: center;
+  color: #394352;
   top: 50px;
 }
 
@@ -79,7 +80,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  bottom: 30%;
+  bottom: 25vh;
 }
 
 .container .alarm button {
@@ -91,6 +92,7 @@ body {
   letter-spacing: 2px;
   -webkit-transition: color .2s ease;
   transition: color .2s ease;
+  border-radius: 50px;
 }
 
 .container .alarm button:hover {
@@ -99,8 +101,15 @@ body {
 }
 
 .container .alarm #alarmTime {
-  margin-top: 10px;
+  margin-top: 15px;
   letter-spacing: 3px;
+}
+
+.container .alarm .alarming {
+  background-color: red;
+  color: #f1f1f1;
+  -webkit-animation: wave 2s ease infinite;
+          animation: wave 2s ease infinite;
 }
 
 .alarm-popup {
@@ -177,5 +186,27 @@ body {
 .alarm-popup .alarm-box #btnSetAlarm:hover {
   cursor: pointer;
   color: #f1f1f1;
+}
+
+@-webkit-keyframes wave {
+  from {
+    -webkit-box-shadow: 0 0 0 0 red;
+            box-shadow: 0 0 0 0 red;
+  }
+  to {
+    -webkit-box-shadow: 0 0 0 10px rgba(255, 0, 0, 0);
+            box-shadow: 0 0 0 10px rgba(255, 0, 0, 0);
+  }
+}
+
+@keyframes wave {
+  from {
+    -webkit-box-shadow: 0 0 0 0 red;
+            box-shadow: 0 0 0 0 red;
+  }
+  to {
+    -webkit-box-shadow: 0 0 0 10px rgba(255, 0, 0, 0);
+            box-shadow: 0 0 0 10px rgba(255, 0, 0, 0);
+  }
 }
 /*# sourceMappingURL=style.css.map */

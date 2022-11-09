@@ -45,7 +45,8 @@ body{
 
     h1{
         position: absolute;
-        color: #1c2a3f; 
+        text-align: center;
+        color: #394352; 
         top: 50px;
     }
 
@@ -78,15 +79,22 @@ body{
         justify-content: center;
         align-items: center;
         width: 100%;
-        bottom: 30%;
+        bottom: max(10vh, 25vh);
 
         button{
             @include button;
+            border-radius: 50px;
         }
         
         #alarmTime{
-            margin-top: 10px;
+            margin-top: 15px;
             letter-spacing: 3px;
+        }
+
+        .alarming{
+            background-color: red;
+            color: #f1f1f1;
+            animation: wave 2s ease infinite;
         }
     }
 }
@@ -137,5 +145,14 @@ body{
         #btnSetAlarm{
             @include button;
         }
+    }
+}
+
+@keyframes wave {
+    from{
+        box-shadow: 0 0 0 0 rgba(255,0,0,1);
+    }
+    to{
+        box-shadow: 0 0 0 10px rgba(255,0,0,0);
     }
 }
