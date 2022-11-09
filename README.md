@@ -2,7 +2,7 @@
 
 This is a simple digital clock in JS.
 
-## Fetures
+## Features
 - AM/PM Digital clock.
 - Parts of all 2 digits.
 - Only one alarm can be set.
