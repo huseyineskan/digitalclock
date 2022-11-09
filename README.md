@@ -14,4 +14,4 @@ This is a simple digital clock in JS.
 - API can be connected.
 
 ## Screenshot
-![Digital Clock](https://github.com/huseyineskan/digitalclock/blob/main/media/digitalclock.gif)
+![Digital Clock](https://github.com/huseyineskan/digitalclock/blob/main/media/digitalclock-screen.gif)
