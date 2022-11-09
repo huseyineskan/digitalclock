@@ -43,9 +43,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   position: relative;
   font-size: 35px;
   letter-spacing: .2em;
@@ -71,9 +68,16 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   bottom: 30%;
 }
@@ -92,6 +96,11 @@ body {
 .container .alarm button:hover {
   cursor: pointer;
   color: #f1f1f1;
+}
+
+.container .alarm #alarmTime {
+  margin-top: 10px;
+  letter-spacing: 3px;
 }
 
 .alarm-popup {
@@ -114,6 +123,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  display: none;
 }
 
 .alarm-popup #close-popup {
