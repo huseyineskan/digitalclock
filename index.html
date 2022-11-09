@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock | Heskan</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/style.css">
+
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Digital Clock</h1>
+        <p id="clock" onload="myTime()">
+            <span id="hours">12</span>:<span id="minutes">11</span>:<span id="seconds">23</span> <span id="period">AM</span>
+        </p>
+        <div class="alarm">
+            <button id="btnAlarm">Set Alarm</button>
+        </div>
+    </div>
+
+    <div class="alarm-popup">
+        <span id="close-popup">X</span>
+        <div class="alarm-box">
+            <div>
+                <input id="alarm-hours" type="number" maxlength="2" value="24" min="00" max="24">
+                <input id="alarm-min" type="number" maxlength="2" value="35" min="00" max="59">
+                <input id="alarm-sec" type="number" maxlength="2" value="10" min="00" max="59">
+            </div>
+            <button id="btnSetAlarm">Set Alarm</button>
+        </div>
+        
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>

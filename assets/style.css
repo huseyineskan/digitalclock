@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+}
+
+body {
+  background-color: #2f3640;
+  color: #f1f1f1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+
+.container h1 {
+  position: absolute;
+  color: #1c2a3f;
+  top: 50px;
+}
+
+.container #clock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  font-size: 35px;
+  letter-spacing: .2em;
+  font-weight: 500;
+}
+
+.container #clock span {
+  min-width: 78px;
+  text-align: center;
+}
+
+.container #clock #period {
+  color: #4e617c;
+  position: absolute;
+  font-size: 18px;
+  right: -60px;
+  top: 4px;
+  letter-spacing: 2px;
+}
+
+.container .alarm {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  bottom: 30%;
+}
+
+.container .alarm button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #39475c;
+  color: #aaa8a8;
+  letter-spacing: 2px;
+  -webkit-transition: color .2s ease;
+  transition: color .2s ease;
+}
+
+.container .alarm button:hover {
+  cursor: pointer;
+  color: #f1f1f1;
+}
+
+.alarm-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(78, 97, 124, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.alarm-popup #close-popup {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.alarm-popup #close-popup:hover {
+  cursor: pointer;
+}
+
+.alarm-popup .alarm-box {
+  background-color: #4e617c;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+.alarm-popup .alarm-box > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.alarm-popup .alarm-box > div input {
+  text-align: center;
+  max-width: 60px;
+  padding: 5px 10;
+  font-size: 20px;
+  outline: none;
+}
+
+.alarm-popup .alarm-box #btnSetAlarm {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #39475c;
+  color: #aaa8a8;
+  letter-spacing: 2px;
+  -webkit-transition: color .2s ease;
+  transition: color .2s ease;
+}
+
+.alarm-popup .alarm-box #btnSetAlarm:hover {
+  cursor: pointer;
+  color: #f1f1f1;
+}
+/*# sourceMappingURL=style.css.map */
